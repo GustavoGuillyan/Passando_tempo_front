@@ -1,0 +1,36 @@
+.timer-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+}
+
+#timer {
+	font-size: 5em;
+	margin-bottom: 20px;
+}
+
+button {
+	font-size: 1.2em;
+	padding: 10px 20px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+#start {
+	background-color: #28a745;
+	color: #fff;
+	border: none;
+}
+
+#pause {
+	background-color: #ffc107;
+	color: #fff;
+	border: none;
+}
+
+#reset {
+	background-color: #dc3545;
+	color: #fff;
+	border: none;
+}
