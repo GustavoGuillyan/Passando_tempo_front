@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="teste.css">
+
+    <title>Pedido Namoro</title>
+    <style>
+        h1 {
+            font-family: Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 36px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Namoraria comigo?</h1>
+        <div ontouchstart="">
+            <div id="yesButton" class="button">
+                <a href="https://www.youtube.com/shorts/U0o9TX1pEOc">Sim</a>
+            </div>
+            <div class="button" id="noButton">
+                <a href="#">Não</a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        var noButton = document.getElementById("noButton");
+
+        noButton.addEventListener("mouseover", moveButton);
+
+        function moveButton() {
+            var newX = Math.floor(Math.random() * window.innerWidth);
+            var newY = Math.floor(Math.random() * window.innerHeight);
+
+            noButton.style.left = newX + "px";
+            noButton.style.top = newY + "px";
+        }
+
+    </script>
+</body>
+
+</html>
